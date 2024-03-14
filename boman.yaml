@@ -4,10 +4,13 @@ Auth:
 SAST:
  language: "java" 
 DAST:
-  type: "WEB"
-  URL: "https://demo.testfire.net/"
-SCA:
-  language: "js"
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "http://testfire.net/"
+  auth: "yes"
+  #type: "WEB"
+  #URL: "https://demo.testfire.net/"
+#SCA:
+ # language: "js"
 
-Secret_Scan: true
+#Secret_Scan: true
 
