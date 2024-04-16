@@ -6,11 +6,10 @@ SAST:
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "http://testfire.net/"
-  auth: "yes"
+  #auth: "yes"
   #type: "WEB"
   #URL: "https://demo.testfire.net/"
 SCA:
  language: "js"
-
 Secret_Scan: true
 
