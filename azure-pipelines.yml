@@ -9,6 +9,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.8' # 3.6,3.7,3.9
 - script: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.4 
   displayName: 'installing'
 
