@@ -4,13 +4,15 @@
 # https://aka.ms/yaml
 
 trigger:
-- AltoroJ-3.2
+  - AltoroJ-3.2
+pool:
+  vmImage: ubuntu-latest
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.8' # 3.6,3.7,3.9 
+- script: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.4 
+  displayName: 'installing'
+
 - script: |
-    sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.4 
-    sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/" 
-  displayName: 'install boman-cli and run scan'
+    boman-cli-uat -a run -u https://devapi.boman.ai/v2/"
+  displayName: 'Running the scan'
+
