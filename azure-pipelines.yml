@@ -5,7 +5,8 @@
 
 trigger:
   - AltoroJ-3.2
-pool:
+pool: 
+  pool: Azure Pipelines
   vmImage: ubuntu-latest
 
 steps:
