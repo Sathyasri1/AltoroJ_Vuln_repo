@@ -21,6 +21,5 @@ steps:
   displayName: 'installing'
 
 - script: |
-     apt install docker.io
      boman-cli-uat -a run -u https://devapi.boman.ai/v2/
   displayName: 'Running the scan'
