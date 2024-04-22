@@ -6,6 +6,7 @@
 trigger:
   - AltoroJ-3.2
 pool: 
+  name: local
   vmImage: ubuntu-latest
 
 steps:
