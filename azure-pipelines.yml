@@ -16,9 +16,10 @@ steps:
   inputs:
     dockerVersion: '17.09.0-ce'
     
+    
 - script: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.4 
   displayName: 'installing'
 
 - script: |
-    boman-cli-uat -a run -u https://devapi.boman.ai/v2/"
+    "C:\Windows\System32\cmd.exe" /C "boman-cli-uat -a run -u https://devapi.boman.ai/v2/""
   displayName: 'Running the scan'
