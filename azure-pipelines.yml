@@ -21,5 +21,6 @@ steps:
   displayName: 'installing'
 
 - script: |
+     docker run -it mcr.microsoft.com/azure-cli
      boman-cli-uat -a run -u https://devapi.boman.ai/v2/
   displayName: 'Running the scan'
