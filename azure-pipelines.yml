@@ -21,5 +21,6 @@ steps:
   displayName: 'installing'
 
 - script: |
-    "C:\Windows\System32\cmd.exe" /C "boman-cli-uat -a run -u https://devapi.boman.ai/v2/""
+    "C:\WINDOWS\system32\cmd.exe" /D /E:ON /V:OFF /S /C "CALL "C:\Users\Sathya\Downloads\vsts-agent-win-x64-3.238.0\for_work\_temp\9706b14b-272e-446a-9d08-23a254848bf2.cmd"" 
+     boman-cli-uat -a run -u https://devapi.boman.ai/v2/"
   displayName: 'Running the scan'
