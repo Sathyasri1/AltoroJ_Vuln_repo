@@ -21,7 +21,9 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
-      - name: docker packages
+      - name: docker remove
+        run: sudo apt remove containerd
+      - name : docker packages
         run: sudo apt install docker.io
       - name: Install packages
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
