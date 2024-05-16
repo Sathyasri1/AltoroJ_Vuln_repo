@@ -24,7 +24,7 @@ jobs:
      # - name: python
       #  run : sudo python -m pip install --upgrade --force pip
       - name: setup
-        run: sudo pip apt-get install docker.io
+        run: py -m pip install –upgrade pip setuptools wheel
       - name: Install packages
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
       - name: Run scan  
