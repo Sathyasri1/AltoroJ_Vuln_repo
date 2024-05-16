@@ -21,12 +21,12 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
-      - name: python
-        run : sudo python -m pip install --upgrade --force pip
-      - name: setup
-        run: sudo pip3 install --upgrade setuptools
+     # - name: python
+      #  run : sudo python -m pip install --upgrade --force pip
+      #- name: setup
+       # run: sudo pip3 install --upgrade setuptools
       - name: Install packages
-        run: sudo pip3 install --extra-index-url https://test.pypi.org/simple/ --upgrade boman-cli-uat==12.6
+        run: sudo pip install -i https://test.pypi.org/simple/ boman-cli-uat
       - name: Run scan  
         run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
 
