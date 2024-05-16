@@ -26,7 +26,7 @@ jobs:
       #- name: setup
        # run: sudo pip3 install --upgrade setuptools
       - name: Install packages
-        run: sudo pip install -i https://test.pypi.org/simple/ boman-cli-uat
+        run: sudo pip install -i https://test.pypi.org/simple/ boman-cli-uat==12.6
       - name: Run scan  
         run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
 
