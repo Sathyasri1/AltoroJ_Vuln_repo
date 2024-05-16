@@ -22,7 +22,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: docker packages
-        run: apt-get update && apt-get install -y python3 python3-pip
+        run: sudo apt install docker.io
       - name: Install packages
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
       - name: Run scan  
