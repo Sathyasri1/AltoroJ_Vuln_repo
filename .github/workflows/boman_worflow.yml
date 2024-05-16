@@ -21,10 +21,8 @@ jobs:
       - uses: actions/checkout@v2
       
       # Runs a single command using the runners shell
-      - name : docker packages
-        run: sudo pip install docker.io
       - name: Install packages
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
+        run: sudo pip3 install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==12.6
       - name: Run scan  
         run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
 
