@@ -26,9 +26,9 @@ jobs:
       #- name: docker
        # run: sudo pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: pip install boman-cli==1.7
+        run: pip install --extra-index-url https://test.pypi.org/simple/ boman-cli==1.7
       - name: Run scan  
-        run: sudo boman-cli -a run
+        run: sudo boman-cli -a run -u https://dashboard.boman.ai/dashboard
 
 
 # # This is a basic workflow to help you get started with Actions
