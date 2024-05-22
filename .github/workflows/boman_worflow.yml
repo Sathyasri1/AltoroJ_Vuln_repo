@@ -28,7 +28,7 @@ jobs:
       - name: Install packages
         run: sudo pip install --extra-index-url https://pypi.org/project/boman-cli/1.7/ boman-cli==1.7
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://dashboard.boman.ai/
+        run: sudo boman-cli-uat -a run
 
 
 # # This is a basic workflow to help you get started with Actions
