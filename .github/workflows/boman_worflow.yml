@@ -23,12 +23,12 @@ jobs:
       # Runs a single command using the runners shell
      # - name: python
       #  run : sudo python -m pip install --upgrade --force pip
-      - name: docker
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ docker
+      #- name: docker
+       # run: sudo pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: sudo pip install --extra-index-url https://pypi.org/project/boman-cli/1.7/ boman-cli==1.7
+        run: sudo pip install --extra-index-url https://pypi.org/project/boman-cli/1.7/ boman-cli
       - name: Run scan  
-        run: sudo boman-cli-uat -a run
+        run: sudo boman-cli-uat -a run -u https://dashboard.boman.ai/
 
 
 # # This is a basic workflow to help you get started with Actions
