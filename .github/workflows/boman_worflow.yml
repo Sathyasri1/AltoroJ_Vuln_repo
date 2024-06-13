@@ -26,9 +26,9 @@ jobs:
       #- name: docker
        # run: sudo pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: sudo pip install boman-cli
+        run: pip install qa-boman-cli
       - name: Run scan  
-        run: sudo boman-cli -a run 
+        run: qa-boman-cli -a run 
         #-zap_session_script Simple_Form_Based_Authentication.js -fb low
 
 
