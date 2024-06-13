@@ -28,7 +28,8 @@ jobs:
       - name: Install packages
         run: sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli -a run -zap_session_script Simple_Form_Based_Authentication.js -fb low
+        run: sudo boman-cli -a run 
+        #-zap_session_script Simple_Form_Based_Authentication.js -fb low
 
 
 # # This is a basic workflow to help you get started with Actions
