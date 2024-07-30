@@ -9,7 +9,24 @@ Auth:
   #auth: "yes"
   #type: "WEB"
   #URL: "https://demo.testfire.net/"
-SCA:
- language: java
+#SCA:
+ #language: java
 #Secret_Scan: true 
+SAST:
+  language: semgrep
+DAST:
+  type: WEB
+  URL: http://testfire.net/
+SCA:
+  language: java
+  #type: sbom
+  #target: app/assets/config/bom.json
+  #type: lockfile
+  #target: Gemfile.lock
+Secret_Scan: true
+container_scan:
+  type: config
+  #target: /openshift-configs/Dockerfile
+  #type: image
+  #target: debian:unstable-slim
 
