@@ -3,33 +3,33 @@ Auth:
   #53244497-2c6d-4f22-b549-d8cefa6032c0 #115c2c26-fda5-4c12-b3e6-23fdc200e6c2 #720caaaa-0d60-4524-864c-4f352132acad #"b3709aed-eb88-474a-b099-31182c127029" #"765d2bd8-b319-4ba0-96ad-39b85b9c2891"    #"35c4ec30-7b90-4030-a847-a03701b75a6f"        
   customer_token: 5b2f4dbd-a873-4042-8441-ff38fef71ed5
   #ad752d56-f8e8-4b3c-a70a-d35abaee21b3 #5b2f4dbd-a873-4042-8441-ff38fef71ed5 #6adf1fb5-cba2-4a30-bf64-6e11d8e99fdc #"6adf1fb5-cba2-4a30-bf64-6e11d8e99fdc" #"70b76e8f-ad96-49b9-ad5d-cf1389168167"    #"d8a90f5c-b4ed-40ea-a83d-7a4bcb103bc0"       
-#SAST:
- #language: semgrep 
-#DAST:
-  #type: "WEB" ## API, dWEB, WEB-ADV
-  #URL: "http://testfire.net/"
-  #auth: "yes"
+SAST:
+ language: semgrep 
+DAST:
+  type: "WEB" ## API, dWEB, WEB-ADV
+  URL: "http://testfire.net/"
+  auth: "yes"
   #type: "WEB"
   #URL: "https://demo.testfire.net/"
 #SCA:
  #language: java
-#Secret_Scan: true 
+Secret_Scan: true 
 #SAST:
   #language: semgrep
 #DAST:
   #type: WEB
   #URL: http://testfire.net/
-#SCA:
-  #language: java
-  #type: sbom
-  #target: app/assets/config/bom.json
+SCA:
+  language: java
+  type: sbom
+  target: app/assets/config/bom.json
   #type: lockfile
   #target: Gemfile.lock
 #Secret_Scan: true
-#container_scan:
-  #type: config
+container_scan:
+  type: config
   #target: /openshift-configs/Dockerfile
   #type: image
   #target: debian:unstable-slim
 SBOM: true
-
+IAC: true
