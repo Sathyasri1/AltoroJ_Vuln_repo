@@ -21,8 +21,8 @@ Secret_Scan: true
   #URL: http://testfire.net/
 SCA:
   language: java
-  type: sbom
-  target: app/assets/config/bom.json
+  #type: sbom
+  #target: app/assets/config/bom.json
   #type: lockfile
   #target: Gemfile.lock
 #Secret_Scan: true
