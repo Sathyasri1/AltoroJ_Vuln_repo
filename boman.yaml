@@ -3,10 +3,10 @@ Auth:
   customer_token: 5b2f4dbd-a873-4042-8441-ff38fef71ed5      
 SAST:
  language: semgrep 
-DAST:
-  type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "http://testfire.net/"
-  auth: "yes"
+#DAST:
+  #type: "WEB" ## API, dWEB, WEB-ADV
+  #URL: "http://testfire.net/"
+  #auth: "yes"
   #type: "WEB"
   #URL: "https://demo.testfire.net/"
 Secret_Scan: true 
