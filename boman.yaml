@@ -5,10 +5,10 @@ Auth:
  #language: semgrep 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
-  URL: "http://testfire.net/"
+  URL: "https://demo.testfire.net/"
+  #URL: "http://testfire.net/"
   auth: "yes"
   #type: "WEB"
-  #URL: "https://demo.testfire.net/"
 #Secret_Scan: true 
 #SCA:
   #language: java
