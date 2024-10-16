@@ -1,6 +1,6 @@
 Auth:
-  project_token: 58177d35-9cf2-41e6-9dd1-7228b4ea0502       
-  customer_token: b1de9563-38b8-40d1-80d9-62b88af4749b     
+  project_token: 6f8bf784-fcdd-44d2-a0d3-99450c4367c8       
+  customer_token: ad752d56-f8e8-4b3c-a70a-d35abaee21b3   
 SAST:
  language: semgrep 
 DAST:
