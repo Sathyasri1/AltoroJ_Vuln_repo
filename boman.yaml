@@ -1,25 +1,25 @@
 Auth:
   project_token: 58177d35-9cf2-41e6-9dd1-7228b4ea0502       
   customer_token: b1de9563-38b8-40d1-80d9-62b88af4749b   
-#SAST:
- #language: semgrep 
+SAST:
+ language: semgrep 
 DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "https://demo.testfire.net/"
   #URL: "http://testfire.net/"
-  #auth: "yes"
+  auth: "yes"
   #type: "WEB"
-#Secret_Scan: true 
-#SCA:
-  #language: java
-  #type: sbom
-  #target: app/assets/config/bom.json
+Secret_Scan: true 
+SCA:
+  language: java
+  type: sbom
+  target: app/assets/config/bom.json
   #type: lockfile
   #target: Gemfile.lock
-#container_scan:
-  #type: config
-  #target: /openshift-configs/Dockerfile
+container_scan:
+  type: config
+  target: /openshift-configs/Dockerfile
   #type: image
   #target: debian:unstable-slim
-#SBOM: true
-#IAC: true
+SBOM: true
+IAC: true
