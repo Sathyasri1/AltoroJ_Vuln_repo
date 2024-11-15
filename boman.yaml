@@ -13,7 +13,8 @@ Secret_Scan: true
 SCA:
   language: java
   type: sbom
-  target: app/assets/config/bom.json
+  target: bom.json
+  #app/assets/config/
   #type: lockfile
   #target: Gemfile.lock
 container_scan:
