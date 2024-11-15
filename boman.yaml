@@ -19,7 +19,7 @@ SCA:
   #target: Gemfile.lock
 container_scan:
   type: config
-  target: /openshift-configs/Dockerfile
+  #target: /openshift-configs/Dockerfile
   #type: image
   #target: debian:unstable-slim
 SBOM: true
