@@ -17,7 +17,7 @@ DAST:
   #type: lockfile
   #target: Gemfile.lock
 #container_scan:
-  type: config
+  #type: config
   #target: /openshift-configs/Dockerfile
   #type: image
   #target: debian:unstable-slim
