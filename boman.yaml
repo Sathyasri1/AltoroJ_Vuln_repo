@@ -7,7 +7,7 @@ DAST:
   type: "WEB" ## API, dWEB, WEB-ADV
   URL: "https://demo.testfire.net/"
   #URL: "http://testfire.net/"
-  auth: "yes"
+  #auth: "yes"
   #type: "WEB"
 #Secret_Scan: true 
 #SCA:
