@@ -4,9 +4,9 @@ name: Bomanai Scanner
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ AltoroJ-3.2 ]
+    branches: [ master ]
   pull_request:
-    branches: [ AltoroJ-3.2 ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,58 +19,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       # Runs a single command using the runners shell
-     # - name: python
-      #  run : sudo python -m pip install --upgrade --force pip
-      #- name: docker
-       # run: sudo pip install --extra-index-url https://test.pypi.org/simple/ docker
       - name: Install packages
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
-        #sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
-        #sudo pip install boman-cli
-      - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://qa.boman.ai/ -at 58177d35-9cf2-41e6-9dd1-7228b4ea0502 -ct b1de9563-38b8-40d1-80d9-62b88af4749b
-        #-at 6f8bf784-fcdd-44d2-a0d3-99450c4367c8 -ct ad752d56-f8e8-4b3c-a70a-d35abaee21b3
-        #sudo boman-cli -a run
-        #sudo boman-cli-uat -a run -u https://qa.boman.ai/ -at 58177d35-9cf2-41e6-9dd1-7228b4ea0502 -ct b1de9563-38b8-40d1-80d9-62b88af4749b
-        #-at 58177d35-9cf2-41e6-9dd1-7228b4ea0502 -ct b1de9563-38b8-40d1-80d9-62b88af4749b
-        #https://dashboard.boman.ai/
-        #https://dash.boman.ai/
-        #-zap_session_script Simple_Form_Based_Authentication.js -fb low
-
-
-# # This is a basic workflow to help you get started with Actions
-
-# name: Boman
-
-# # Controls when the workflow will run
-# on:
-#   # Triggers the workflow on push or pull request events but only for the master branch
-#   push:
-#     branches: [ AltoroJ-3.2 ]
-#   pull_request:
-#     branches: [ AltoroJ-3.2 ]
-
-#   # Allows you to run this workflow manually from the Actions tab
-#   workflow_dispatch:
-
-# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# jobs:
-#   # This workflow contains a single job called "build"
-#   build:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
-
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2
-
-#       # Runs a single command using the runners shell
-#       - name: Boman SAST with bomancli10
-#         run: sudo pip install --extra-index-url https://test.pypi.org/project/ boman-cli-uat==12.6
-#       # Runs a set of commands using the runners shell
-#       - name: Run a multi-line script
-#         run: sudo boman-cli-uat -a run -u https://devapi.boman.ai/v2/
-    
+        run: sudo pip install boman-cli
+      - name: Run scan
+        run: sudo boman-cli -a run
