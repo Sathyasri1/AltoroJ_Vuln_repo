@@ -25,3 +25,8 @@ jobs:
         run: sudo pip install boman-cli
       - name: Run scan
         run: sudo boman-cli -a run -u https://qa.boman.ai/
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: boman_opengrep.json
