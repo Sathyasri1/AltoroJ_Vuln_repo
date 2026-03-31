@@ -3,6 +3,6 @@ Auth:
   customer_token: af107e85-7de2-4dae-9e7e-c04adbbaf66d
 SAST:
   language: opengrep
-SCA:
-  language: php
-Secret_Scan: true
+# SCA:
+#   language: php
+# Secret_Scan: true
